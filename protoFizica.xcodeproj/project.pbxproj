@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A219CA32A34DFAA0005E9ED /* protoFizicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */; };
+		4A219CA52A34DFAA0005E9ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA42A34DFAA0005E9ED /* Item.swift */; };
+		4A219CA72A34DFAA0005E9ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA62A34DFAA0005E9ED /* ContentView.swift */; };
+		4A219CA92A34DFAA0005E9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A219CA82A34DFAA0005E9ED /* Assets.xcassets */; };
+		4A219CAD2A34DFAA0005E9ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A219CAC2A34DFAA0005E9ED /* Preview Assets.xcassets */; };
+		4A219CB72A34DFAB0005E9ED /* protoFizicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CB62A34DFAB0005E9ED /* protoFizicaTests.swift */; };
+		4A219CC12A34DFAB0005E9ED /* protoFizicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CC02A34DFAB0005E9ED /* protoFizicaUITests.swift */; };
+		4A219CC32A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A219CB32A34DFAB0005E9ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A219C972A34DFAA0005E9ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A219C9E2A34DFAA0005E9ED;
+			remoteInfo = protoFizica;
+		};
+		4A219CBD2A34DFAB0005E9ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A219C972A34DFAA0005E9ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A219C9E2A34DFAA0005E9ED;
+			remoteInfo = protoFizica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A219C9F2A34DFAA0005E9ED /* protoFizica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protoFizica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaApp.swift; sourceTree = "<group>"; };
+		4A219CA42A34DFAA0005E9ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4A219CA62A34DFAA0005E9ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A219CA82A34DFAA0005E9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A219CAA2A34DFAA0005E9ED /* protoFizica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = protoFizica.entitlements; sourceTree = "<group>"; };
+		4A219CAC2A34DFAA0005E9ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A219CB22A34DFAB0005E9ED /* protoFizicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoFizicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A219CB62A34DFAB0005E9ED /* protoFizicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaTests.swift; sourceTree = "<group>"; };
+		4A219CBC2A34DFAB0005E9ED /* protoFizicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoFizicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A219CC02A34DFAB0005E9ED /* protoFizicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaUITests.swift; sourceTree = "<group>"; };
+		4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A219C9C2A34DFAA0005E9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CAF2A34DFAB0005E9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CB92A34DFAB0005E9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A219C962A34DFAA0005E9ED = {
+			isa = PBXGroup;
+			children = (
+				4A219CA12A34DFAA0005E9ED /* protoFizica */,
+				4A219CB52A34DFAB0005E9ED /* protoFizicaTests */,
+				4A219CBF2A34DFAB0005E9ED /* protoFizicaUITests */,
+				4A219CA02A34DFAA0005E9ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A219CA02A34DFAA0005E9ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A219C9F2A34DFAA0005E9ED /* protoFizica.app */,
+				4A219CB22A34DFAB0005E9ED /* protoFizicaTests.xctest */,
+				4A219CBC2A34DFAB0005E9ED /* protoFizicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A219CA12A34DFAA0005E9ED /* protoFizica */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */,
+				4A219CA42A34DFAA0005E9ED /* Item.swift */,
+				4A219CA62A34DFAA0005E9ED /* ContentView.swift */,
+				4A219CA82A34DFAA0005E9ED /* Assets.xcassets */,
+				4A219CAA2A34DFAA0005E9ED /* protoFizica.entitlements */,
+				4A219CAB2A34DFAA0005E9ED /* Preview Content */,
+			);
+			path = protoFizica;
+			sourceTree = "<group>";
+		};
+		4A219CAB2A34DFAA0005E9ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CAC2A34DFAA0005E9ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A219CB52A34DFAB0005E9ED /* protoFizicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CB62A34DFAB0005E9ED /* protoFizicaTests.swift */,
+			);
+			path = protoFizicaTests;
+			sourceTree = "<group>";
+		};
+		4A219CBF2A34DFAB0005E9ED /* protoFizicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CC02A34DFAB0005E9ED /* protoFizicaUITests.swift */,
+				4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */,
+			);
+			path = protoFizicaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A219C9E2A34DFAA0005E9ED /* protoFizica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A219CC62A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizica" */;
+			buildPhases = (
+				4A219C9B2A34DFAA0005E9ED /* Sources */,
+				4A219C9C2A34DFAA0005E9ED /* Frameworks */,
+				4A219C9D2A34DFAA0005E9ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = protoFizica;
+			productName = protoFizica;
+			productReference = 4A219C9F2A34DFAA0005E9ED /* protoFizica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A219CB12A34DFAB0005E9ED /* protoFizicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A219CC92A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizicaTests" */;
+			buildPhases = (
+				4A219CAE2A34DFAB0005E9ED /* Sources */,
+				4A219CAF2A34DFAB0005E9ED /* Frameworks */,
+				4A219CB02A34DFAB0005E9ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A219CB42A34DFAB0005E9ED /* PBXTargetDependency */,
+			);
+			name = protoFizicaTests;
+			productName = protoFizicaTests;
+			productReference = 4A219CB22A34DFAB0005E9ED /* protoFizicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A219CBB2A34DFAB0005E9ED /* protoFizicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A219CCC2A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizicaUITests" */;
+			buildPhases = (
+				4A219CB82A34DFAB0005E9ED /* Sources */,
+				4A219CB92A34DFAB0005E9ED /* Frameworks */,
+				4A219CBA2A34DFAB0005E9ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A219CBE2A34DFAB0005E9ED /* PBXTargetDependency */,
+			);
+			name = protoFizicaUITests;
+			productName = protoFizicaUITests;
+			productReference = 4A219CBC2A34DFAB0005E9ED /* protoFizicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A219C972A34DFAA0005E9ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4A219C9E2A34DFAA0005E9ED = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					4A219CB12A34DFAB0005E9ED = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4A219C9E2A34DFAA0005E9ED;
+					};
+					4A219CBB2A34DFAB0005E9ED = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4A219C9E2A34DFAA0005E9ED;
+					};
+				};
+			};
+			buildConfigurationList = 4A219C9A2A34DFAA0005E9ED /* Build configuration list for PBXProject "protoFizica" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A219C962A34DFAA0005E9ED;
+			productRefGroup = 4A219CA02A34DFAA0005E9ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A219C9E2A34DFAA0005E9ED /* protoFizica */,
+				4A219CB12A34DFAB0005E9ED /* protoFizicaTests */,
+				4A219CBB2A34DFAB0005E9ED /* protoFizicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A219C9D2A34DFAA0005E9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A219CAD2A34DFAA0005E9ED /* Preview Assets.xcassets in Resources */,
+				4A219CA92A34DFAA0005E9ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CB02A34DFAB0005E9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CBA2A34DFAB0005E9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A219C9B2A34DFAA0005E9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A219CA52A34DFAA0005E9ED /* Item.swift in Sources */,
+				4A219CA32A34DFAA0005E9ED /* protoFizicaApp.swift in Sources */,
+				4A219CA72A34DFAA0005E9ED /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CAE2A34DFAB0005E9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A219CB72A34DFAB0005E9ED /* protoFizicaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A219CB82A34DFAB0005E9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A219CC12A34DFAB0005E9ED /* protoFizicaUITests.swift in Sources */,
+				4A219CC32A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A219CB42A34DFAB0005E9ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A219C9E2A34DFAA0005E9ED /* protoFizica */;
+			targetProxy = 4A219CB32A34DFAB0005E9ED /* PBXContainerItemProxy */;
+		};
+		4A219CBE2A34DFAB0005E9ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A219C9E2A34DFAA0005E9ED /* protoFizica */;
+			targetProxy = 4A219CBD2A34DFAB0005E9ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A219CC42A34DFAB0005E9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A219CC52A34DFAB0005E9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4A219CC72A34DFAB0005E9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = protoFizica/protoFizica.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"protoFizica/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A219CC82A34DFAB0005E9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = protoFizica/protoFizica.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"protoFizica/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A219CCA2A34DFAB0005E9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/protoFizica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/protoFizica";
+			};
+			name = Debug;
+		};
+		4A219CCB2A34DFAB0005E9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/protoFizica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/protoFizica";
+			};
+			name = Release;
+		};
+		4A219CCD2A34DFAB0005E9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = protoFizica;
+			};
+			name = Debug;
+		};
+		4A219CCE2A34DFAB0005E9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev..protoFizicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = protoFizica;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A219C9A2A34DFAA0005E9ED /* Build configuration list for PBXProject "protoFizica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A219CC42A34DFAB0005E9ED /* Debug */,
+				4A219CC52A34DFAB0005E9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A219CC62A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A219CC72A34DFAB0005E9ED /* Debug */,
+				4A219CC82A34DFAB0005E9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A219CC92A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A219CCA2A34DFAB0005E9ED /* Debug */,
+				4A219CCB2A34DFAB0005E9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A219CCC2A34DFAB0005E9ED /* Build configuration list for PBXNativeTarget "protoFizicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A219CCD2A34DFAB0005E9ED /* Debug */,
+				4A219CCE2A34DFAB0005E9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A219C972A34DFAA0005E9ED /* Project object */;
+}
