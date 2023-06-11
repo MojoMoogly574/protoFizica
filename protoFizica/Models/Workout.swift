@@ -14,6 +14,7 @@ import SwiftData
 final class Workout {
     @Attribute(.unique) var workoutTitle: String
     var workoutObjective: String
+    @Relationship(.cascade, inverse: \Exercise.workout) var exercises:  [Exercise]? = [ ]
     
     
     

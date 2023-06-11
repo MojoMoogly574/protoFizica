@@ -47,7 +47,7 @@ struct AddWorkoutScreen: View {
                         }catch{
                             print(error.localizedDescription)
                         }
-                        dismiss( )
+                        dismiss()
                     }
                     .disabled(!isFormValid)//if form is not valid, user will not be able to save
                 }

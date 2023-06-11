@@ -20,6 +20,10 @@
 		4A219CDA2A350F890005E9ED /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */; };
 		4A219CDC2A351A050005E9ED /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CDB2A351A050005E9ED /* WorkoutListView.swift */; };
 		4A219CDE2A35FB7E0005E9ED /* WorkoutDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */; };
+		4A219CE02A360C510005E9ED /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CDF2A360C510005E9ED /* Exercise.swift */; };
+		4A219CE22A360EE10005E9ED /* AddExerciseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CE12A360EE10005E9ED /* AddExerciseScreen.swift */; };
+		4A219CE42A361C240005E9ED /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CE32A361C240005E9ED /* HapticsManager.swift */; };
+		4A219CE62A362B620005E9ED /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CE52A362B620005E9ED /* ExerciseListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
 		4A219CDB2A351A050005E9ED /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 		4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailScreen.swift; sourceTree = "<group>"; };
+		4A219CDF2A360C510005E9ED /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		4A219CE12A360EE10005E9ED /* AddExerciseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseScreen.swift; sourceTree = "<group>"; };
+		4A219CE32A361C240005E9ED /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		4A219CE52A362B620005E9ED /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4A219CA42A34DFAA0005E9ED /* Workout.swift */,
+				4A219CDF2A360C510005E9ED /* Exercise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 		4A219CD12A34E00B0005E9ED /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				4A219CE32A361C240005E9ED /* HapticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -180,6 +190,7 @@
 			children = (
 				4A219CA62A34DFAA0005E9ED /* ContentView.swift */,
 				4A219CDB2A351A050005E9ED /* WorkoutListView.swift */,
+				4A219CE52A362B620005E9ED /* ExerciseListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 				4A219CD32A34E01A0005E9ED /* Views */,
 				4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */,
 				4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */,
+				4A219CE12A360EE10005E9ED /* AddExerciseScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -329,10 +341,14 @@
 				4A219CDA2A350F890005E9ED /* WorkoutListScreen.swift in Sources */,
 				4A219CA52A34DFAA0005E9ED /* Workout.swift in Sources */,
 				4A219CDE2A35FB7E0005E9ED /* WorkoutDetailScreen.swift in Sources */,
+				4A219CE62A362B620005E9ED /* ExerciseListView.swift in Sources */,
+				4A219CE42A361C240005E9ED /* HapticsManager.swift in Sources */,
 				4A219CDC2A351A050005E9ED /* WorkoutListView.swift in Sources */,
+				4A219CE22A360EE10005E9ED /* AddExerciseScreen.swift in Sources */,
 				4A219CA32A34DFAA0005E9ED /* protoFizicaApp.swift in Sources */,
 				4A219CD82A34F56D0005E9ED /* String+Extension.swift in Sources */,
 				4A219CA72A34DFAA0005E9ED /* ContentView.swift in Sources */,
+				4A219CE02A360C510005E9ED /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

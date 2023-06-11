@@ -13,32 +13,73 @@ struct WorkoutDetailScreen: View {
     //MARK: PROPERTIES
     @State private var workoutTitle: String = ""
     @State private var workoutObjective: String = ""
-    
+    @State private var showExerciseScreen: Bool = false
+    @Environment (\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var context
     
     
     let workout: Workout
     var body: some View {
-      
-            Form {
-                Section("Workout Title"){
-                    TextField("Workout Title", text: $workoutTitle)
+        
+        Form {
+            Section("Workout Title"){
+                TextField("Workout Title", text: $workoutTitle)
+            }
+            Section("Workout Description/Objective:"){
+                TextEditor(text: $workoutObjective)
+                    .frame(width: 350, height: 125, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(5)
+                    .padding()
+            }
+            //MARK:  ADD EXERCISE
+            Section(header: Text("Exercises")) {
+                Button(action:   {
+                    HapticManager.notification(type: .success)
+                    withAnimation{
+                        showExerciseScreen = true
+                    }
+                })
+                {
+                    Image(systemName: "plus.circle.fill")
+                    
                 }
-                Section("Workout Description/Objective:"){
-                    TextEditor(text: $workoutObjective)
-                        .frame(width: 350, height: 125, alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(5)
-                        .padding()
+                if let exercises = workout.exercises {
+                    if exercises.isEmpty {
+                        ContentUnavailableView {
+                            Text("Add Exercises to Routine")
+                        }
+                    }
+                    else {
+                       ExerciseListView(exercises: exercises)
+                    }
                 }
+            
+                //MARK:  UPDATE BUTTON
+            
+            }
+               
                 Button("Update") {
                     workout.workoutTitle = workoutTitle
                     workout.workoutObjective = workoutObjective
+                    dismiss( )
+                    do {
+                        try context.save( )
+                    }catch{
+                        print(error.localizedDescription)
+                    }
                 }
+                .buttonStyle(.borderless)
             }
             .onAppear {
                 workoutTitle = workout.workoutTitle
                 workoutObjective = workout.workoutObjective
             }
+            .sheet(isPresented: $showExerciseScreen, content: {
+                NavigationStack {
+                    AddExerciseScreen(workout: workout)
+                }
+            })
         }
     }
 

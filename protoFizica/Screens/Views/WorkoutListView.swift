@@ -26,21 +26,26 @@ struct WorkoutListView: View {
     var body: some View {
         List {
             ForEach(workouts) { workout in
-                HStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(workout.workoutTitle)
-                            .foregroundColor(.primary)
-                            .accessibilityAddTraits(.isHeader)
-                            .font(.body)
-                            .fontWeight(.bold)
-                            .padding(5)
-                        Text(workout.workoutObjective)
-                            .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.blue)
+                NavigationLink(value: workout) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(workout.workoutTitle)
+                                .foregroundColor(.primary)
+                                .accessibilityAddTraits(.isHeader)
+                                .font(.body)
+                                .fontWeight(.bold)
+                                .padding(5)
+                            Text(workout.workoutObjective)
+                                .font(.caption)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.blue)
+                        }
                     }
                 }
-            }
+                    .navigationDestination(for: Workout.self) { workout in
+                        WorkoutDetailScreen(workout: workout)
+                    }
+                }
             .onDelete(perform: deleteWorkout)
             .padding(.all)
                                     .overlay(
