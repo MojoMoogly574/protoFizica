@@ -43,7 +43,7 @@ struct AddExerciseScreen: View {
                     
                     do {
                         try context.save( )
-                        workout.exercises?.append(exercise)
+                        workout.exercises.append(exercise)
                     }catch{
                         print(error.localizedDescription)
                     }

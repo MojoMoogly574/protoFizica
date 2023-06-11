@@ -14,6 +14,7 @@ struct WorkoutDetailScreen: View {
     @State private var workoutTitle: String = ""
     @State private var workoutObjective: String = ""
     @State private var showExerciseScreen: Bool = false
+    
     @Environment (\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
     
@@ -22,55 +23,50 @@ struct WorkoutDetailScreen: View {
     var body: some View {
         
         Form {
-            Section("Workout Title"){
+            Section(header: Text("Workout Title")){
                 TextField("Workout Title", text: $workoutTitle)
             }
-            Section("Workout Description/Objective:"){
+            Section(header: Text("Workout Description/Objective:")){
                 TextEditor(text: $workoutObjective)
                     .frame(width: 350, height: 125, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
                     .padding()
             }
+            
             //MARK:  ADD EXERCISE
-            Section(header: Text("Exercises")) {
-                Button(action:   {
+            Section(header: Text("Exercises") ){
+                Button(action:  {
                     HapticManager.notification(type: .success)
-                    withAnimation{
-                        showExerciseScreen = true
-                    }
+                    showExerciseScreen = true
+                }, label: {
+                    Text("Add Exercise")
+                        .foregroundColor(Color("grey"))
                 })
-                {
-                    Image(systemName: "plus.circle.fill")
-                    
-                }
-                if let exercises = workout.exercises {
-                    if exercises.isEmpty {
+                
+                if workout.exercises.isEmpty {
                         ContentUnavailableView {
                             Text("Add Exercises to Routine")
                         }
                     }
                     else {
-                       ExerciseListView(exercises: exercises)
+                        ExerciseListView(workout: workout)
                     }
                 }
-            
-                //MARK:  UPDATE BUTTON
-            
             }
-               
-                Button("Update") {
-                    workout.workoutTitle = workoutTitle
-                    workout.workoutObjective = workoutObjective
-                    dismiss( )
-                    do {
-                        try context.save( )
-                    }catch{
-                        print(error.localizedDescription)
-                    }
+            //MARK:  UPDATE BUTTON
+            Button("Update") {
+                workout.workoutTitle = workoutTitle
+                workout.workoutObjective = workoutObjective
+                dismiss( )
+                do {
+                    try context.save( )
+                }catch{
+                    print(error.localizedDescription)
                 }
-                .buttonStyle(.borderless)
             }
+            .buttonStyle(.bordered)
+            
             .onAppear {
                 workoutTitle = workout.workoutTitle
                 workoutObjective = workout.workoutObjective
@@ -81,28 +77,25 @@ struct WorkoutDetailScreen: View {
                 }
             })
         }
-    }
-
-struct WorkoutDetailContainerScreen: View {
-    //MARK:  PROPERTIES
-    @Environment(\.modelContext) private var context
-    @State private var workout: Workout?
-    
-    var body: some View {
         
-        ZStack {
-            if let workout {
-                WorkoutDetailScreen(workout: workout)
+    }
+    
+    struct WorkoutDetailContainerScreen: View {
+        //MARK:  PROPERTIES
+        @Environment(\.modelContext) private var context
+        @State private var workout: Workout?
+        
+        var body: some View {
+            
+            ZStack {
+                if let workout {
+                    WorkoutDetailScreen(workout: workout)
+                }
             }
-        }
             .onAppear {
                 workout = Workout(workoutTitle: "Murph", workoutObjective: "Complete as Rx'd for time.")
                 context.insert(workout!)
             }
+        }
     }
-}
-#Preview {
-    WorkoutDetailContainerScreen()
-        .modelContainer(for: [Workout.self])
-      
-}
+

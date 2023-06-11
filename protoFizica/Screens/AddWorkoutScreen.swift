@@ -17,14 +17,14 @@ struct AddWorkoutScreen: View {
     @State private var workoutObjective: String = ""
     
     private var isFormValid: Bool {
-        !workoutTitle.isEmptyOfWhiteSpace && workoutObjective != nil
+        !workoutTitle.isEmptyOfWhiteSpace
     }
     var body: some View {
         Form {
             TextField("Workout Title", text: $workoutTitle)
             Section("Workout Description/Objective:"){
                 TextEditor(text: $workoutObjective)
-                    .frame(width: 350, height: 125, alignment: .leading)
+                    .frame(width: 350, height: 100, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
                     .padding()

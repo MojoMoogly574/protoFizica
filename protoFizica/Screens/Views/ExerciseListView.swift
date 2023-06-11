@@ -9,17 +9,26 @@ import SwiftUI
 
 struct ExerciseListView: View {
     //MARK:  PROPERTIES
-    let exercises: [Exercise]
+    @Environment(\.modelContext) private var context
+    let workout: Workout
     
     private func deleteExercise(indexSet: IndexSet)  {
         indexSet.forEach { index in
-            let exercise = exercises[index]
+            let exercise = workout.exercises [index]
+            context.delete(exercise)
+            
+            do {
+                workout.exercises.remove(at: index)
+                try context.save( )
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
     
     var body: some View {
         List {
-            ForEach(exercises) { exercise in
+            ForEach(workout.exercises) { exercise in
                 VStack (alignment: .leading){
                     Text(exercise.exerciseName)
                 }
@@ -30,8 +39,4 @@ struct ExerciseListView: View {
 
         }
     }
-}
-#Preview {
-    ExerciseListView(exercises: [ ])
-        .modelContainer(for: [ ])
 }
