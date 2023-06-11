@@ -12,9 +12,12 @@ import SwiftData
 struct protoFizicaApp: App {
 
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                WorkoutListScreen()
+            }
+            .modelContainer(for:  [Workout.self])
         }
-        .modelContainer(for: Item.self)
     }
 }

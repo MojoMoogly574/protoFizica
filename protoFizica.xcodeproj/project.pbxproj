@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4A219CA32A34DFAA0005E9ED /* protoFizicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */; };
-		4A219CA52A34DFAA0005E9ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA42A34DFAA0005E9ED /* Item.swift */; };
+		4A219CA52A34DFAA0005E9ED /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA42A34DFAA0005E9ED /* Workout.swift */; };
 		4A219CA72A34DFAA0005E9ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CA62A34DFAA0005E9ED /* ContentView.swift */; };
 		4A219CA92A34DFAA0005E9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A219CA82A34DFAA0005E9ED /* Assets.xcassets */; };
 		4A219CAD2A34DFAA0005E9ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A219CAC2A34DFAA0005E9ED /* Preview Assets.xcassets */; };
 		4A219CB72A34DFAB0005E9ED /* protoFizicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CB62A34DFAB0005E9ED /* protoFizicaTests.swift */; };
 		4A219CC12A34DFAB0005E9ED /* protoFizicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CC02A34DFAB0005E9ED /* protoFizicaUITests.swift */; };
 		4A219CC32A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */; };
+		4A219CD62A34F3630005E9ED /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CD52A34F3630005E9ED /* AddWorkoutScreen.swift */; };
+		4A219CD82A34F56D0005E9ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CD72A34F56D0005E9ED /* String+Extension.swift */; };
+		4A219CDA2A350F890005E9ED /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */; };
+		4A219CDC2A351A050005E9ED /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CDB2A351A050005E9ED /* WorkoutListView.swift */; };
+		4A219CDE2A35FB7E0005E9ED /* WorkoutDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		4A219C9F2A34DFAA0005E9ED /* protoFizica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protoFizica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaApp.swift; sourceTree = "<group>"; };
-		4A219CA42A34DFAA0005E9ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4A219CA42A34DFAA0005E9ED /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		4A219CA62A34DFAA0005E9ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A219CA82A34DFAA0005E9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A219CAA2A34DFAA0005E9ED /* protoFizica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = protoFizica.entitlements; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		4A219CBC2A34DFAB0005E9ED /* protoFizicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoFizicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A219CC02A34DFAB0005E9ED /* protoFizicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaUITests.swift; sourceTree = "<group>"; };
 		4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoFizicaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A219CD52A34F3630005E9ED /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
+		4A219CD72A34F56D0005E9ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
+		4A219CDB2A351A050005E9ED /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		4A219C962A34DFAA0005E9ED = {
 			isa = PBXGroup;
 			children = (
+				4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */,
 				4A219CA12A34DFAA0005E9ED /* protoFizica */,
 				4A219CB52A34DFAB0005E9ED /* protoFizicaTests */,
 				4A219CBF2A34DFAB0005E9ED /* protoFizicaUITests */,
@@ -97,9 +108,11 @@
 		4A219CA12A34DFAA0005E9ED /* protoFizica */ = {
 			isa = PBXGroup;
 			children = (
-				4A219CA22A34DFAA0005E9ED /* protoFizicaApp.swift */,
-				4A219CA42A34DFAA0005E9ED /* Item.swift */,
-				4A219CA62A34DFAA0005E9ED /* ContentView.swift */,
+				4A219CD22A34E0110005E9ED /* Extensions */,
+				4A219CD12A34E00B0005E9ED /* Managers */,
+				4A219CD02A34E0020005E9ED /* Support */,
+				4A219CCF2A34DFFA0005E9ED /* Models */,
+				4A219CD42A34F1900005E9ED /* Screens */,
 				4A219CA82A34DFAA0005E9ED /* Assets.xcassets */,
 				4A219CAA2A34DFAA0005E9ED /* protoFizica.entitlements */,
 				4A219CAB2A34DFAA0005E9ED /* Preview Content */,
@@ -130,6 +143,56 @@
 				4A219CC22A34DFAB0005E9ED /* protoFizicaUITestsLaunchTests.swift */,
 			);
 			path = protoFizicaUITests;
+			sourceTree = "<group>";
+		};
+		4A219CCF2A34DFFA0005E9ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CA42A34DFAA0005E9ED /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A219CD02A34E0020005E9ED /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4A219CD12A34E00B0005E9ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4A219CD22A34E0110005E9ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CD72A34F56D0005E9ED /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A219CD32A34E01A0005E9ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CA62A34DFAA0005E9ED /* ContentView.swift */,
+				4A219CDB2A351A050005E9ED /* WorkoutListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A219CD42A34F1900005E9ED /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4A219CD52A34F3630005E9ED /* AddWorkoutScreen.swift */,
+				4A219CD32A34E01A0005E9ED /* Views */,
+				4A219CD92A350F890005E9ED /* WorkoutListScreen.swift */,
+				4A219CDD2A35FB7E0005E9ED /* WorkoutDetailScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A219CA52A34DFAA0005E9ED /* Item.swift in Sources */,
+				4A219CD62A34F3630005E9ED /* AddWorkoutScreen.swift in Sources */,
+				4A219CDA2A350F890005E9ED /* WorkoutListScreen.swift in Sources */,
+				4A219CA52A34DFAA0005E9ED /* Workout.swift in Sources */,
+				4A219CDE2A35FB7E0005E9ED /* WorkoutDetailScreen.swift in Sources */,
+				4A219CDC2A351A050005E9ED /* WorkoutListView.swift in Sources */,
 				4A219CA32A34DFAA0005E9ED /* protoFizicaApp.swift in Sources */,
+				4A219CD82A34F56D0005E9ED /* String+Extension.swift in Sources */,
 				4A219CA72A34DFAA0005E9ED /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
